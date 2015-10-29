@@ -27,9 +27,7 @@ and what you should write is the sayHi function that makes the code above work,
   //Code Here for first
 
   var first = function (arr, cb) {
-    for (var i = 0; i < arr.length; i++) {
-      cb(arr[i]);
-    }
+      cb(arr[0]);
   }
 
 
@@ -47,9 +45,7 @@ first(names, function(firstName){
 
   //Code Here for last
   var last = function (arr, cb) {
-    for (var i = 0; i < arr.length; i++) {
-      cb(arr[i]);
-    }
+    cb(arr[arr.length-1]);
   }
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
